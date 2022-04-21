@@ -106,4 +106,3 @@ Slides: https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 39-121)
 ### Lecture
 
 Slides:  https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 122-177)
-
