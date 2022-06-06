@@ -12,11 +12,20 @@ This class is about exploring complexity and innovation through the lens of adva
 
 ## Further online materials
 
+
+### Course Materials
+
 The course closely follows the main reading, which offers vast additional material online:
 
 - General Resource for the book: https://www.cs.ubc.ca/~tmm/vadbook/
 - Undergraduate Course at UBC: https://www.students.cs.ubc.ca/~cs-436v/22Jan/)
 - Video Sessions on YouTube: https://www.youtube.com/watch?v=1GhZisgc6DI&list=PLT4XLHmqHJBdB24LAQPk_PV7wrwpJFh5a
+
+### Python and D3.js
+
+- https://github.com/PyGoogle/PyD3
+- 
+
 
 
 ## Deliverables
