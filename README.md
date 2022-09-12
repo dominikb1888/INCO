@@ -23,8 +23,8 @@ The course closely follows the main reading, which offers vast additional materi
 
 ### Python and D3.js
 
-- https://github.com/PyGoogle/PyD3
-- 
+- https://www.bogotobogo.com/python/IPython/iPython_Jupyter_Notebook_with_Embedded_D3.php, https://github.com/PyGoogle/PyD3
+- https://mpld3.github.io/ 
 
 
 
