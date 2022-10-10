@@ -24,11 +24,58 @@ The course closely follows the main reading, which offers vast additional materi
 ### Python and D3.js
 
 - https://www.bogotobogo.com/python/IPython/iPython_Jupyter_Notebook_with_Embedded_D3.php, https://github.com/PyGoogle/PyD3
-- https://mpld3.github.io/ 
-
+- https://mpld3.github.io/
 
 
 ## Deliverables
 
-- As part of the course you need to prepare an individual data visualization project based on publicly available healthcare dataset. 
+- As part of the course you need to prepare an individual data visualization project based on publicly available healthcare dataset.
+
+## Sessions
+
+- Lecture: 30min
+- Hands-on: 90-180min
+- Project Presentation: 90-180min
+
+### Session 1 - Why Data Visualization and How?
+
+#### Hands-on
+- Introductory Example using Python Matplotlib
+- Review on Progress Board and Discussion
+
+#### Lecture
+- Theory and Research Findings on Visualization
+- Data Visualization in Healthcare
+
+#### Project
+- Project Ideation
+
+### Session 2 - What: Data Abstraction
+
+#### Lecture
+- What: Data Abstraction
+
+#### Hands-on
+- Data Types in Visualization and their implementation in Python
+
+### Session 3 - Why: Task Abstraction
+
+#### Project
+
+- Presentation of Theme, Dataset and prospective message
+- Joint ideation on visualization and technologies used
+
+### Session 4 - Analysis: Four levels of validation
+
+- Understanding the need and a framework for validation
+- Application to own project
+- Preliminary planning of iterations, definition of roadmap
+
+
+### Session 5 - Marks and Channels
+
+#### Lecture - Overview on Marks and Channels
+
+#### Hands-on - Identifying Marks and Channels in Progress Board
+
 
