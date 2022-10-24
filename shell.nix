@@ -10,6 +10,7 @@ let
     plotly
     numpy
     rich
+    seaborn
   ];
 
 in pkgs.mkShell {
