@@ -17,6 +17,6 @@ in pkgs.mkShell {
     pythonEnv
 
     # keep this line if you use bash
-    pkgs.bashInteractive
+    # pkgs.bashInteractive
   ];
 }

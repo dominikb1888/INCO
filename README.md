@@ -43,27 +43,31 @@ The course closely follows the main reading, which offers vast additional materi
 - Introductory Example using Python Matplotlib
 - Review on Progress Board and Discussion
 
-#### Lecture
-- Theory and Research Findings on Visualization
-- Data Visualization in Healthcare
-
 #### Project
 - Project Ideation
 
+
 ### Session 2 - What: Data Abstraction
 
-#### Lecture
-- What: Data Abstraction
-
 #### Hands-on
+
 - Data Types in Visualization and their implementation in Python
+
 
 ### Session 3 - Why: Task Abstraction
 
-#### Project
+#### Lecture
 
-- Presentation of Theme, Dataset and prospective message
+- Theory and Research Findings on Visualization
+- Data Visualization in Healthcare
+- What: Data Abstraction
+
+#### Hands-on
+
+- Project Setup with HTML, CSS, and JavaScript (D3.js)
+- Can we get to this?! https://ourworldindata.org/health-meta#health-returns-to-healthcare-investment
 - Joint ideation on visualization and technologies used
+
 
 ### Session 4 - Analysis: Four levels of validation
 
@@ -75,7 +79,4 @@ The course closely follows the main reading, which offers vast additional materi
 ### Session 5 - Marks and Channels
 
 #### Lecture - Overview on Marks and Channels
-
-#### Hands-on - Identifying Marks and Channels in Progress Board
-
 
