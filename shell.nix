@@ -1,16 +1,18 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  pythonEnv = with pkgs.python310Packages; [
+  pythonEnv = with pkgs.python311Packages; [
     ipython
     jupyter
     jupyterlab
     matplotlib
+    panel
     pandas
     plotly
     numpy
     rich
     seaborn
+    # ipywidgets
   ];
 
 in pkgs.mkShell {
