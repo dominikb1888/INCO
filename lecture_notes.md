@@ -30,3 +30,4 @@ Homework:
 - Find a way to display all students in the heatmap
 - Change colors (maybe size and fonts if necessary) to make display clearer
 
+
