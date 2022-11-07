@@ -13,6 +13,10 @@ let
     plotly
     seaborn
 
+    streamlit
+
+    ipympl
+    ipywidgets
   ];
 
 in pkgs.mkShell {

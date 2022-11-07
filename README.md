@@ -80,6 +80,9 @@ The course closely follows the main reading, which offers vast additional materi
 - Application to own project
 - Preliminary planning of iterations, definition of roadmap
 
+#### Hands-on
+- Producing interactivity in prototyping: https://kapernikov.com/ipywidgets-with-matplotlib/
+- Setting up your Web App and transferring your data
 
 ### Session 5 - Marks and Channels
 
