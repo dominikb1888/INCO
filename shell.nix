@@ -13,7 +13,9 @@ let
     plotly
     seaborn
 
-    streamlit
+    # streamlit
+
+    pytest
 
     ipympl
     ipywidgets
