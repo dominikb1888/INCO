@@ -88,12 +88,22 @@ The course closely follows the main reading, which offers vast additional materi
 ### Session 5 - TEAM PRESENTATIONS
 
 
-### Session 6 - Marks and Channels
+### Session 6 - Data and Task Abstraction
 
 #### Lecture
 
-Slides: https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (39-177)
+Slides: https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 39-121)
+
+#### Project Tipps:
+
+- Get clarity about Domain, Users, and their Problems
+- Specify and Prioritize User Problems
+- Build simple "social" prototypes to facilitate communication and avoid spending useless time implementing "something": https://www.interaction-design.org/literature/article/design-thinking-get-started-with-prototyping
 
 
-#### Lecture - Overview on Marks and Channels
+### Session 7 - Marks and Channels
+
+### Lecture
+
+Slides:  https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 122-177)
 

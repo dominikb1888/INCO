@@ -30,4 +30,24 @@ Homework:
 - Find a way to display all students in the heatmap
 - Change colors (maybe size and fonts if necessary) to make display clearer
 
+## Session 4
+
+NO CLASS
+
+## Session 5
+- TEAM PRESENTATIONS
+
+## Session 6
+
+Theory:
+- Data and Task Abstractions are fundamental for translating problem domain to actual implementation logic
+- They offer a precise language to describe requirements for a visualization based on user needs
+- Data Abstractions look at the options for different data structures at the basis of visualizations
+- Task Abstractions look at the combination of Action and Target to narrowly define the requirements for the frontend
+
+Exercise:
+- Discussion of Homework: How to get from Pivot Table with absolute values to a mixed display
+
+## Session 7
+
 
