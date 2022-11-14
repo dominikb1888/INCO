@@ -65,7 +65,7 @@ The course closely follows the main reading, which offers vast additional materi
 - Slides (pp. 16-30): https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf
 
 - Video 1: https://youtu.be/KXswx4QSkHc
--  Video 2: https://youtu.be/Yq2IkdgWr9Q
+- Video 2: https://youtu.be/Yq2IkdgWr9Q
 
 #### Hands-on
 
@@ -84,7 +84,16 @@ The course closely follows the main reading, which offers vast additional materi
 - Producing interactivity in prototyping: https://kapernikov.com/ipywidgets-with-matplotlib/
 - Setting up your Web App and transferring your data
 
-### Session 5 - Marks and Channels
+
+### Session 5 - TEAM PRESENTATIONS
+
+
+### Session 6 - Marks and Channels
+
+#### Lecture
+
+Slides: https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (39-177)
+
 
 #### Lecture - Overview on Marks and Channels
 
