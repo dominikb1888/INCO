@@ -50,4 +50,6 @@ Exercise:
 
 ## Session 7
 
-
+Theory:
+- Lecture on Marks and Channels - Finalizes the toolbox for visualization analysis and design
+- Use the toolbox to design your projects, I will use it to grade your projects :-)

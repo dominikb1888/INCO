@@ -14,6 +14,7 @@ let
     seaborn
 
     # streamlit
+    dash
 
     pytest
 
