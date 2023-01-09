@@ -129,21 +129,21 @@ Technical Implementations can be Data Visualizations (Data goes one way), Web-Ap
 The Report Structure for Data Visualization Project follows the Framework for Data Visualization, Analysis, and Design from Munzner. The Framework offers a precise language for describing implementation purpose and detail of data visualization heavy project.
 
 
-1. Context: Domain Situation
+1. Context: Domain Situation (10%)
 
   - What is the domain and who are the stakeholders?
   - What is you key user and what are their goals?
   - Which Use-Cases are there and which did you prioritize?
 
 
-2. Translation:
+2. Translation (30%):
 
   - Reason about Data and Task Abstraction, i.e.
   - Display you Design choice for Visual Encoding and Abstraction Idiom
   - Marks and Channels
 
 
-3. Implementation:
+3. Implementation (50%):
 
   - Display the detailed description of your implementation
   - Show the technology stack and architecture your used
@@ -155,14 +155,14 @@ The Report Structure for Data Visualization Project follows the Framework for Da
     - Medium: Web application based on non-realtime data with frontend from visualization framework usage of FHIR data but no API
     - Minimum: Data Visualization of non-realtime data with custom data structure
 
-4. Testing:
+4. Testing (5%):
 
   - Provide unit tests
   - Show results of runtime and memory profiling
   - Show results of a load test
 
 
-5. Roadmap
+5. Roadmap (5%):
 
   - Reflect on the development process and its outcomes: What went well, what to change?
   - What are immediate next steps?

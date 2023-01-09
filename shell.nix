@@ -16,6 +16,8 @@ let
     # streamlit
     dash
 
+    flask
+
     pytest
 
     ipympl
