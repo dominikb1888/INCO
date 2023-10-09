@@ -4,16 +4,15 @@ This class is about exploring complexity and innovation through the lens of adva
 
 ## Reading
 
-- Theory: [Visualization Analysis & Design](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=1664615)
+- Lecture: [Visualization Analysis & Design](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=1664615)
+- Practice: [Data Visualization with Python and JavaScript](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30285893)
 
+## Recommended Reading:  
 - D3.js: [D3.js in Action](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6642501&query=d3.js&ppg=1), [Interactive Data Visualization for the Web](https://www.oreilly.com/library/view/interactive-data-visualization/9781491921296/)
 - Python: [Practical Data Science with Python](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6739165), [Python Data Analysis](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6462897)
 
 
-## Further online materials
-
-
-### Course Materials
+## Course Materials
 
 The course closely follows the main reading, which offers vast additional material online:
 
@@ -34,8 +33,8 @@ The course closely follows the main reading, which offers vast additional materi
 ## Sessions
 
 - Lecture: 30min
-- Hands-on: 90-180min
-- Project Presentation: 90-180min
+- Hands-on: 90-150min
+- Project Presentation/Feedback (in 4 Sessions): 60min
 
 ### Session 1 - Why Data Visualization and How?
 
