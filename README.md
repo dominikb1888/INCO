@@ -7,7 +7,7 @@ This class is about exploring complexity and innovation through the lens of adva
 - Lecture: [Visualization Analysis & Design](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=1664615)
 - Practice: [Data Visualization with Python and JavaScript](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30285893)
 
-## Recommended Reading:  
+## Recommended Reading:
 - D3.js: [D3.js in Action](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6642501&query=d3.js&ppg=1), [Interactive Data Visualization for the Web](https://www.oreilly.com/library/view/interactive-data-visualization/9781491921296/)
 - Python: [Practical Data Science with Python](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6739165), [Python Data Analysis](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6462897)
 
@@ -29,6 +29,7 @@ The course closely follows the main reading, which offers vast additional materi
 ## Deliverables
 
 - As part of the course you need to prepare an individual data visualization project based on publicly available healthcare dataset.
+- The form of delivery is a two-tier architecture with a backend emitting fhir-compliant json and a frontend using d3.js to visualize and interact on the data.
 
 ## Sessions
 
@@ -38,7 +39,7 @@ The course closely follows the main reading, which offers vast additional materi
 
 ### Session 1 - Why Data Visualization and How?
 
-#### Hands-on
+#### Lecture
 - Introductory Example using Python Matplotlib
 - Review on Progress Board and Discussion
 
@@ -49,8 +50,12 @@ The course closely follows the main reading, which offers vast additional materi
 ### Session 2 - What: Data Abstraction
 
 #### Hands-on
+- Introductory Example using Matplotlib (Recreating Progressboard V 0.1)
 
-- Data Types in Visualization and their implementation in Python
+#### Lecture
+- Why Visualization Analysis and Design? (Slides 2-15)
+- Framework for Visualization Analysis and Design (Slides 16-39)
+- Data Types in Visualization and their implementation in Python (Slides 39-93)
 
 
 ### Session 3 - Why: Task Abstraction
