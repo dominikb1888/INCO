@@ -10,6 +10,14 @@
 
 ## Session 2
 
+- Review of the progressboard example and its main functionalities as a web application
+- Revisiting the prototyping process in-depth
+- Intro to data acquisition and cleaning with Pandas and Numpy
+- Intro to Computational (Python, Numpy) and Statistical Data Types
+- Data Preparation for Visualization (e.g. Pivot Table for Heatmap)
+- Different forms of Visualization for different purposes
+- Introduction to the Visualization Analysis and Design Framework by Munzner
+
 ## Session 3
 
 ## Session 4

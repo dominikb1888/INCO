@@ -55,21 +55,14 @@ The course closely follows the main reading, which offers vast additional materi
 #### Lecture
 - Why Visualization Analysis and Design? (Slides 2-15)
 - Framework for Visualization Analysis and Design (Slides 16-39)
-- Data Types in Visualization and their implementation in Python (Slides 39-93)
 
 
 ### Session 3 - Why: Task Abstraction
 
 #### Lecture
 
+- Data Types in Visualization and their implementation in Python (Slides 39-93)
 - Theory and Research Findings on Visualization
-- Data Visualization in Healthcare
-- What: Data Abstraction
-
-- Slides (pp. 16-30): https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf
-
-- Video 1: https://youtu.be/KXswx4QSkHc
-- Video 2: https://youtu.be/Yq2IkdgWr9Q
 
 #### Hands-on
 
@@ -89,10 +82,8 @@ The course closely follows the main reading, which offers vast additional materi
 - Setting up your Web App and transferring your data
 
 
-### Session 5 - TEAM PRESENTATIONS
 
-
-### Session 6 - Data and Task Abstraction
+### Session 5 - Data and Task Abstraction
 
 #### Lecture
 
@@ -103,6 +94,11 @@ Slides: https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 39-121)
 - Get clarity about Domain, Users, and their Problems
 - Specify and Prioritize User Problems
 - Build simple "social" prototypes to facilitate communication and avoid spending useless time implementing "something": https://www.interaction-design.org/literature/article/design-thinking-get-started-with-prototyping
+
+
+### Session 6 - PROJECT PRESENTATIONS
+
+- Share an initial picture and a message for your project (1 min / per Project)
 
 
 ### Session 7 - Marks and Channels
