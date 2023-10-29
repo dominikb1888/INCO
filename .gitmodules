@@ -1,3 +1,6 @@
 [submodule "Session_11/flask"]
 	path = Session_11/flask
 	url = https://github.com/dominikb1888/INCO_22W_flask
+[submodule "dataviz-with-python-and-js-ed-2"]
+	path = dataviz-with-python-and-js-ed-2
+	url = https://github.com/Kyrand/dataviz-with-python-and-js-ed-2
