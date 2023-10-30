@@ -22,13 +22,14 @@ let
 
     ipympl
     ipywidgets
+    pdftotext
   ];
 
 in pkgs.mkShell {
   buildInputs = with pkgs; [
     python311
     pythonEnv
-
+    nodePackages.ijavascript
     # keep this line if you use bash
     # pkgs.bashInteractive
   ];

@@ -1,0 +1,83 @@
+#chart_html ol {
+    height: 50px;
+    position: relative;
+    top: 22px;
+}
+
+#chart_html li {
+    display: block;
+    float:left;
+    background: #eee;
+    border-radius: 50%;
+    border: 3px solid lightcoral;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+#chart_html li a {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    background: lightcoral;
+    border-radius: 50%;
+}
+
+#chart_html li.zero,
+#chart_html li.zero a {
+    border: 3px solid #eee;
+    color: #ddd;
+}
+
+#chart_html li.zero a {
+    background: none;
+    top: 12px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+
+}
+
+#chart_html li.small a {
+    position: relative;
+    background: none;
+    color: lightcoral;
+    top: 15px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+#chart_html dt {
+    display: table-cell;
+    vertical-align: middle;
+    clear:left;
+    float: left;
+    width: 180px;
+    background-color: #ddd;
+    border: 3px solid #eee;
+    color: #666;
+    padding: .5em 1em;
+    position: relative;
+    top: 6px;
+    border-radius: .5em;
+    z-index: 100;
+}
+
+#chart_html dd {
+    display: block;
+    height: 50px;
+    position: relative;
+    top: -25px;
+    border-bottom: 3px solid #eee;
+}
+
+#chart_html dt,
+#chart_html dd {
+    margin-bottom: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+} 
