@@ -27,10 +27,8 @@ d3.json("heatmap.json")
                 .attr("class", function() {if (value === 0) {return "zero";} else if (value > 0 && value < 25) { return "small"; }})
                 .append("a")   
                 .attr("style", function() {let size = (value/2) + "px"; let shift = (50 - value / 2) / 2 + "px"; if (value > 24) { return "height: " + size + "; width: " + size + "; top: " + shift + "; left: " + shift + ";"  }})
-                .attr("id", index[i] + "-" + (j + 1))
+                .attr("id", index[i] + "--" + (j + 1))
                 .text(value);
-
-
         });
     });
 });
