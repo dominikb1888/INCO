@@ -19,6 +19,7 @@ let
     flask
 
     pytest
+    sparqlwrapper
 
     ipympl
     ipywidgets

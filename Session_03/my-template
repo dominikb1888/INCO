@@ -1,0 +1,4 @@
+
+{{/#}}
+<p><a href="{{{latest_commit_url}}}">{{session}}-{{exercise}}</a></p>
+{{/.}}

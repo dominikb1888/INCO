@@ -1,0 +1,31 @@
+<script src="https://unpkg.com/htmx.org@1.9.6"></script>
+<script src="https://unpkg.com/htmx.org/dist/ext/client-side-templates.js"></script>
+<script src="https://unpkg.com/mustache@latest"></script>
+
+  <!-- have a button POST a click via AJAX -->
+  <div hx-ext="client-side-templates">
+    <button hx-get="http://127.0.0.1:5000/api/v1/user_repos/1990Flori"
+            hx-swap="innerHTML"
+            hx-target="#content"
+            mustache-array-template="foo">
+      Click Me
+    </button>
+    <div hx-get="my-template" id="foo" type="text/mustache"></div>
+    <p id="content">Start</p>
+
+</div>
+  <!--
+
+"avatar": "https://avatars.githubusercontent.com/u/115531163?v=4",
+"commits": [],
+"exercise": "02",
+"latest_commit_comment_count": false,
+"latest_commit_url": "https://github.com/DB-Student-Repos/01-02-leap-1990Flori-1",
+"name": "01-02-leap-1990Flori-1",
+"session": "01",
+"status": "not-started",
+"url": "https://github.com/DB-Student-Repos/01-02-leap-1990Flori-1",
+"user": "1990Flori",
+"user_url": "https://github.com/1990Flori"
+
+  -->
