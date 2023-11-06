@@ -14,7 +14,7 @@ let
     seaborn
 
     # streamlit
-    dash
+    # dash
 
     flask
 
@@ -24,6 +24,14 @@ let
     ipympl
     ipywidgets
     pdftotext
+
+    # Session 04
+    requests
+    urllib3
+    httplib2
+    httpx
+
+    python-dotenv
   ];
 
 in pkgs.mkShell {
