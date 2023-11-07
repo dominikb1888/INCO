@@ -1,0 +1,43 @@
+{
+  organization(login: "DB-Student-Repos") {
+    repositories(last: 50, after: null) {
+      edges {
+        node {
+          name
+          defaultBranchRef {
+            target {
+              ... on Commit {
+                history(first: 10) {
+                  edges {
+                    node {
+                      id
+                      checkSuites(last: 5) {
+                        edges {
+                          node {
+                            id
+                            updatedAt
+                            conclusion
+                          }
+                        }
+                      }
+                      message
+                      author {
+                        name
+                        email
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}
