@@ -11,7 +11,7 @@ load_dotenv()
 
 GH_TOKEN = os.environ.get("GHTOKEN")
 GH_USER = 'dominikb1888'
-GH_URL = "https://api.github.com/orgs/DB-Student-Repos/repos?sort=pushed&direction=desc&per_page=100"
+# GH_URL = "https://api.github.com/orgs/DB-Student-Repos/repos?per_page=2000"
 
 def get_commits(repo_urls):
     commit_shas = []
@@ -24,20 +24,18 @@ def get_commits(repo_urls):
             commit_shas.append(commit['sha'])
 
 
-#get first page of GH API
-response = requests.get(GH_URL, auth=(GH_TOKEN,GH_USER))
-print(response.text)
-# load json data as list of dicts
-json_response = json.loads(response.text)
-#with open("repos.json") as f:
-#    json_response = json.load(f)
+# get first page of GH API
+# response = requests.get(GH_URL, auth=(GH_TOKEN,GH_USER))
+# print(response.text)
+# # load json data as list of dicts
+# json_response = json.loads(response.text)
+with open("repos.json") as f:
+    json_response = json.load(f)
 
-#repo_urls = [repo.get('url') for repo in json_response]
-#print(repo_urls, len(repo_urls))
+repo_urls = [repo.get('url') for repo in json_response]
+print(repo_urls, len(repo_urls))
 
 commits = []
 with ThreadPoolExecutor() as executor:
     print(repo_urls)
     commits.append(list(executor.map(get_commits, [repo_urls], chunksize=10)))
-
-commits
