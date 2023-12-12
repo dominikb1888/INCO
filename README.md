@@ -8,7 +8,7 @@ This class is about exploring complexity and innovation through the lens of adva
 - Practice: [Data Visualization with Python and JavaScript](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30285893)
 
 ## Recommended Reading:
-- D3.js: [D3.js in Action](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6642501&query=d3.js&ppg=1), [Interactive Data Visualization for the Web](https://www.oreilly.com/library/view/interactive-data-visualization/9781491921296/)
+- D3.js: [D3 in Depth](https://d3indepth.com/), [D3.js in Action](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6642501&query=d3.js&ppg=1), [Interactive Data Visualization for the Web](https://www.oreilly.com/library/view/interactive-data-visualization/9781491921296/)
 - Python: [Practical Data Science with Python](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6739165), [Python Data Analysis](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=6462897)
 
 
@@ -104,5 +104,18 @@ Slides: https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 39-121)
 ### Session 7 - Marks and Channels
 
 ### Lecture
+- Tabular Data
+
+### Session 8 - Introduction to JavaScript and D3.js
+
+#### Lecture
+- Networked Data
+
+#### Exercise
+- A Basic Barchart:
+    - Charts
+    - Scales
+    - Axes
+    - Selections and Joins
 
 Slides:  https://www.cs.ubc.ca/~tmm/talks/vad/VAD-2021.pdf (pp. 122-177)
