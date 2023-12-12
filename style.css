@@ -1,0 +1,12 @@
+.bar {
+  fill: blue;
+  color: black;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-anchor: middle;
+}
+
+#barchart {
+  width: 600px;
+  height: 400px;
+}
