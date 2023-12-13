@@ -29,17 +29,17 @@ async function processData() {
     var basemap = await getJSONData('world-110m.geojson')
     var selected_data = filterData(getCheckedValues(), data )
     var mychart = new Barchart({
-      'element': '#barchart', 
+      'element': '#barchart',
       'data': selected_data,
     });
 
     var mymap = new WorldMap({
-      'element': '#map', 
-      'data': selected_data, 
+      'element': '#map',
+      'data': selected_data,
       'basemap': basemap,
     });
 
-    d3.selectAll('input[type=checkbox]').on('change', function() { 
+    d3.selectAll('input[type=checkbox]').on('change', function() {
       selected_data = filterData(getCheckedValues(), data)
       mychart.setData(selected_data);
       mymap.setData(selected_data);

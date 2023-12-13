@@ -49,6 +49,32 @@ h3 {
   margin-left: 2px;
 }
 
+#grid {
+  display: grid;
+  grid-template:
+      "a b b b ";
+}
+
+#charts {
+  grid-area: 'a';
+}
+
+#filters {
+  grid-area: 'b';
+}
+
+#barchart {
+  width: 600px;
+  height: 400px;
+}
+
+#selectList {
+  background-color: #eee;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 #barchart svg {
   overflow: visible;
 }
@@ -93,8 +119,6 @@ h3 {
 
 }
 
-
-
 #selectList  input[type=checkbox]:checked + label {
   border: 3px solid black !important;
 }
@@ -108,6 +132,59 @@ h3 {
   backdrop-filter: contrast(30%);
   font-size: 1.5em;
   color: #333;
+  text-align: center;
+}
+
+#selectList input[type=checkbox]:checked + label span.checkmark:after {
+ content: "\2714";
+}
+
+#selectList label:hover {
+  border-color: red !important;
+  cursor: pointer;
+}
+
+#selectList label span.checkmark:hover {
+  border-color: red !important;
+  cursor: pointer;
+  backdrop-filter: grayscale(0%);
+  content: none;
+}
+
+#selectList option.fib {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+#selectList input[type=checkbox] {
+  display: none;
+}
+
+#selectList label {
+  display: block;
+  width: 40px;
+  height: 30px;
+  float: left;
+  margin: .2em .3em;
+  border: 3px solid #eee;
+}
+
+
+
+#selectList  input[type=checkbox]:checked + label {
+  border: 3px solid black !important;
+}
+
+#selectList input[type=checkbox]:checked + label span.checkmark {
+  width: 40px;
+  height: 30px;
+  border:0;
+  position:relative;
+  display: inline-block;
+  backdrop-filter: contrast(30%);
+  font-size: 1.7em;
+  color: lightgreen;
   text-align: center;
 }
 
