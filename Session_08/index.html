@@ -4,13 +4,30 @@
   <meta charset="UTF-8">
   <title>CodePen - D3 Intro INCO</title>
   <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+  <script crossorigin='anonymous' src="https://unpkg.com/htmx.org@1.9.9"></script>
+  <script crossorigin='anonymous' src="https://unpkg.com/htmx.org/dist/ext/client-side-templates.js"></script>
+  <script crossorigin='anonymous' src="https://unpkg.com/mustache@latest"></script>
 </head>
 <body>
-<select name="countries" id="selectList" multiple>
-  </select>
-<div id='barchart'>
-
+<div id="grid">
+  <div id="filters">
+  <div id="selectList" hx-trigger="load" hx-get="./data.json" hx-swap=innerHTML hx-target="#checkboxes" hx-ext="client-side-templates" mustache-array-template="data">
+    <fieldset id="checkboxes"></fieldset>
+    <template id="data">
+      <legend>Countries</legend>
+      {{#data}}
+      <div> 
+        <input type="checkbox" name="countries" checked="on" id="{{key}}"></input>
+        <label for="{{key}}" class="fib fi-{{code}}"><span class="checkmark"> </span></label>
+      </div>
+      {{/data}}
+    </template>
+  </div>
+</div>
+<div id="charts">
+  <div id='barchart'></div>
+</div>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js'></script>
   <script src="script.js"></script>
