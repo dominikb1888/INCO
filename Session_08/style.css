@@ -6,3 +6,7 @@
 svg {
   overflow: visible;
 }
+
+rect {
+  fill: orange;
+}
