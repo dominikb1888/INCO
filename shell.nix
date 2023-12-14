@@ -10,6 +10,7 @@ let
     pandas
     matplotlib
 
+    geojson
     plotly
     seaborn
 

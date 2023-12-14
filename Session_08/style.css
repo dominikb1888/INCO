@@ -1,3 +1,11 @@
+body, legend {
+  font-family: 'Jost', sans-serif !important;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
 #grid {
   display: grid;
   grid-template:
@@ -6,10 +14,13 @@
 
 #charts {
   grid-area: 'a';
+  padding-top: 1em;
 }
 
 #filters {
   grid-area: 'b';
+  padding: 1rem 1rem;
+  padding-top: 4rem;
 }
 
 #barchart {
@@ -18,22 +29,37 @@
 
 }
 
-#selectList {
-  background-color: #eee;
+#selectList fieldset {
   border: 0;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 0;
+  padding: 0 0;
 }
 
+#selectList fieldset {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
+#selectList fieldset div {
+  margin-left: 2px;
+}
 
 #barchart svg {
   overflow: visible;
 }
 
-#barchart rect {
-  fill: orange;
+#barchart rect,
+#barchart path,
+#barchart line {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #333;
 }
+
+#barchart text {
+  font-weight: bolder !important;
+}
+
 
 #selectList option.fib {
   background-size: contain;
@@ -47,11 +73,11 @@
 
 #selectList label {
   display: block;
-  width: 40px;
-  height: 30px;
+  width: 51px;
+  height: 40px;
   float: left;
-  margin: .2em .3em;
-  border: 3px solid #eee;
+  margin: .2em .2em 0 0;
+
 }
 
 
@@ -61,14 +87,14 @@
 }
 
 #selectList input[type=checkbox]:checked + label span.checkmark {
-  width: 40px;
-  height: 30px;
+  display: inline-block;
+  width: 47px;
+  height: 36px;
   border:0;
   position:relative;
-  display: inline-block;
   backdrop-filter: contrast(30%);
-  font-size: 1.7em;
-  color: lightgreen;
+  font-size: 1.5em;
+  color: #333;
   text-align: center;
 }
 
