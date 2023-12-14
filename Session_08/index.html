@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
   <script crossorigin='anonymous' src="https://unpkg.com/htmx.org@1.9.9"></script>
   <script crossorigin='anonymous' src="https://unpkg.com/htmx.org/dist/ext/client-side-templates.js"></script>
   <script crossorigin='anonymous' src="https://unpkg.com/mustache@latest"></script>
@@ -17,21 +16,23 @@
 <body>
 <div id="grid">
   <div id="filters">
-  <div id="selectList" hx-trigger="load" hx-get="./data.json" hx-swap=innerHTML hx-target="#checkboxes" hx-ext="client-side-templates" mustache-array-template="data">
+  <div id="selectList" hx-trigger="load" hx-get="./countries.json" hx-swap=innerHTML hx-target="#checkboxes" hx-ext="client-side-templates" mustache-array-template="data">
     <fieldset id="checkboxes"></fieldset>
     <template id="data">
       <legend>Countries</legend>
       {{#data}}
       <div> 
-        <input type="checkbox" name="countries" checked="on" id="{{key}}"></input>
-        <label for="{{key}}" class="fib fi-{{code}}"><span class="checkmark"> </span></label>
+        <input type="checkbox" name="countries" checked="on" id="{{name}}"></input>
+        <label for="{{name}}" class="fib fi-{{alpha-2}}"><span class="checkmark"> </span></label>
       </div>
       {{/data}}
     </template>
   </div>
 </div>
 <div id="charts">
+  <h3>Nobel Prize Winners per Country</h2>
   <div id='barchart'></div>
+  <div id="map"></div>
 </div>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js'></script>

@@ -7,19 +7,21 @@ class Barchart {
   
     draw() {
       const chartHolder = d3.select(this.element)
-      const boundingRect = chartHolder.node().getBoundingClientRect(); 
-      this.width = boundingRect.width; 
-      this.height = boundingRect.height;
+      var boundingRect = chartHolder.node().getBoundingClientRect(); 
+      this.margin = {top:20, right:20, bottom:30, left:40};
+      this.width = boundingRect.width - this.margin.left - this.margin.right; 
+      this.height = boundingRect.height - this.margin.top - this.margin.bottom;
     
+  
       this.element.innerHTML = '';
   
       const svg = chartHolder.append("svg") 
-        .attr("width", this.width) 
-        .attr("height", this.height) 
+        .attr("width", this.width + this.margin.left + this.margin.right) 
+        .attr("height", this.height + this.margin.top + this.margin.bottom) 
       
       this.chart = svg
         .append("g").classed('chart', true) 
-        // .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
+        .attr("transform", "translate(" + this.margin.left + "," + this.margin.top + ")");
   
       this.createScales();
       this.addAxes();
@@ -30,7 +32,7 @@ class Barchart {
     createScales() {
       const maxWinners = d3.max(this.data, d => d.prizes_won);
 
-      this.yscale = d3.scaleLinear()
+      this.yscale = d3.scaleSymlog()
         .domain([0, maxWinners])
         .range([this.height, 0]);
     
@@ -51,8 +53,13 @@ class Barchart {
       this.chart.append("g").attr("id","x-axis")
         .attr('transform','translate(0,' + this.height + ')')
         .call(xaxis)
-        .selectAll('text')
-        .text('')
+        .selectAll("text")
+          .attr("y", 2)
+          .attr("x", -9)
+          .attr("dy", ".35em")
+          .attr("transform", "rotate(-65)")
+          .style("text-anchor", "end");
+  
     }
   
   
@@ -69,17 +76,13 @@ class Barchart {
         .attr("stroke-width",2)
         .attr("stroke", "white")
     
-     this.chart.append("g").selectAll('foreignObject')
-        .data(this.data)
-        .join('foreignObject')
-          .attr("width", 51)
-          .attr("height", 40)
-          .attr("x", function (d,i) { let pos = (i * barWidth) + 3; if (d.prizes_won >= 100) { pos = pos - 5 }; return pos;})
-          .attr("y", this.height)
-        .append('div')
-          .attr('class', d=>'fib fi-'+d['alpha-2'])
-  
-          
+     this.chart.append("g").selectAll('text')
+        .data(this.data, d=>d)
+        .join('text')
+        .text(d=> d.prizes_won)
+           .attr("class", "text")
+           .attr("x", function (d,i) { let pos = (i * barWidth) + 13; if (d.prizes_won >= 100) { pos = pos - 5 }; return pos;})
+           .attr("y", (d,i) => this.yscale(d.prizes_won) -10);
     }
   
     setData(newData) {
