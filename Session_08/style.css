@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'flags' ;
+  src: url('static/fonts/flags_color_world.ttf') format('truetype');
+}
+
 body, legend {
   font-family: 'Jost', sans-serif !important;
 }
@@ -17,16 +22,16 @@ h3 {
   padding-top: 1em;
 }
 
+#barchart {
+  display: block;
+  width: inherit;
+  min-height: 300px;
+}
+
 #filters {
   grid-area: 'b';
   padding: 1rem 1rem;
   padding-top: 4rem;
-}
-
-#barchart {
-  width: 600px;
-  height: 400px;
-
 }
 
 #selectList fieldset {
@@ -60,6 +65,14 @@ h3 {
   font-weight: bolder !important;
 }
 
+#barchart foreignObject div.fib {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 40px;
+  display: block;
+}
 
 #selectList option.fib {
   background-size: contain;
