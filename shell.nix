@@ -11,6 +11,7 @@ let
     matplotlib
 
     geojson
+    geopandas
     plotly
     seaborn
 
