@@ -22,9 +22,9 @@ h3 {
   padding-top: 1em;
 }
 
-#barchart {
+#barchart, #barchart2 {
   display: block;
-  width: inherit;
+  width: 1000px;
   min-height: 300px;
 }
 

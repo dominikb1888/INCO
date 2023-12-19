@@ -1,60 +1,76 @@
-Promise.all([
-    d3.json('world-110m.geojson'),
-    d3.json('nobellaureates.geojson')
-]).then(function([world, nobelwinners]){
-
-    const chartWidth = 1000;
-    const chartHeight = 500;
-    const backgroundColor = "#EAF2FA";
-    const landColor = "#09A573";
-    const landStroke = "#FCF5E9";
-    const markerColor = "#E26F99";
-   
-
-    const projection = d3.geoMercator()
-                        .scale([180])
-                        .center([-60,50])
-                        .translate([chartWidth / 4, chartHeight / 3]);
-
-    const pathGenerator = d3.geoPath(projection);
-    
-    const mapHolder = d3.select('#map');
-
-    const svg = mapHolder.append('svg')
-                .attr("title", "Map")
-                .attr('width', chartWidth)
-                .attr('height', chartHeight);
-
-    svg.append("rect")
-        .attr("width", chartWidth)
-        .attr("height", chartHeight)
-        .attr('fill', backgroundColor);
-
-    svg.append('g').selectAll('path')
-        .data(world.features)
+class WorldMap {
+    constructor(opts) {
+      this.element = document.querySelector(opts.element);
+      this.data = opts.data;
+      this.world = opts.basemap;
+  
+      this.backgroundColor = "#EAF2FA";
+      this.landColor = "#09A573";
+      this.landStroke = "#FCF5E9";
+      this.markerColor = "#E26F99";
+  
+      this.chartWidth = 1000;
+      this.chartHeight = 500;
+  
+      this.draw();
+    }
+  
+    draw() {
+      const mapHolder = d3.select(this.element);
+      this.mymap = mapHolder.append('svg')
+        .attr("title", "Map")
+        .attr('width', this.chartWidth)
+        .attr('height', this.chartHeight);
+  
+      this.createProjection();
+      this.createMap();
+      this.updateMarkers(); // Changed to updateMarkers()
+    }
+  
+    createProjection() {
+      this.projection = d3.geoMercator()
+        .scale([180])
+        .center([-60, 50])
+        .translate([this.chartWidth / 4, this.chartHeight / 3]);
+  
+      this.path = d3.geoPath().projection(this.projection);
+    }
+  
+    createMap() {
+      this.mymap.append("rect")
+        .attr("width", this.chartWidth)
+        .attr("height", this.chartHeight)
+        .attr('fill', this.backgroundColor);
+  
+      this.mymap.append('g').selectAll('path')
+        .data(this.world.features)
         .join('path')
-        .attr('d', pathGenerator)
-        .attr('fill', landColor)
-        .attr('stroke', landStroke)
+        .attr('d', this.path)
+        .attr('fill', this.landColor)
+        .attr('stroke', this.landStroke)
         .attr('stroke-width', 1);
-    
-    svg.append('g').selectAll("circle")
-        .data(nobelwinners)
-        .join("circle")
-        .attr("cx", function (d) {
-            if (d.geo_point_2d) {
-                coords = Object.values(d.geo_point_2d);
-                return projection(coords)[0];
-            }
-          })
-          .attr("cy", function (d) {
-            if (d.geo_point_2d) {
-                coords = Object.values(d.geo_point_2d);
-                return projection(coords)[1];
-            }
-          })
-          .attr("r", 5) // Adjust the radius as needed
-          .style("fill", "red");
-
-})
-   
+    }
+  
+    updateMarkers() {
+      const circles = this.mymap.select('g').selectAll("circle")
+        .data(this.data);
+  
+      circles.exit().remove();
+  
+      circles.enter()
+        .append("circle")
+        .merge(circles)
+        .attr("transform", d => {
+          const coords = d.geo_point_2d ? Object.values(d.geo_point_2d) : [0, 0];
+          return `translate(${this.projection(coords)})`;
+        })
+        .attr("r", 5)
+        .style("fill", "red");
+    }
+  
+    setData(newData) {
+      this.data = newData;
+      this.updateMarkers(); // Call updateMarkers() to update markers when data changes
+    }
+  }
+  

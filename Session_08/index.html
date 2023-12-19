@@ -22,8 +22,8 @@
       <legend>Countries</legend>
       {{#data}}
       <div> 
-        <input type="checkbox" name="countries" checked="on" id="{{name}}"></input>
-        <label for="{{name}}" class="fib fi-{{alpha-2}}"><span class="checkmark"> </span></label>
+        <input type="checkbox" name="countries" checked="on" id="{{alpha-2}}"></input>
+        <label for="{{alpha-2}}" class="fib fi-{{alpha-2}}"><span class="checkmark"></span></label>
       </div>
       {{/data}}
     </template>
@@ -37,7 +37,7 @@
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js'></script>
   <script src="barchart.js"></script>
+  <script src="map.js"></script>  
   <script src="script.js"></script>
-  <script src="map.js"></script>
 </body>
 </html>
