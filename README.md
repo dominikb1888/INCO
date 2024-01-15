@@ -31,6 +31,19 @@ The course closely follows the main reading, which offers vast additional materi
 - As part of the course you need to prepare an individual data visualization project based on publicly available healthcare dataset.
 - The form of delivery is a two-tier architecture with a backend emitting fhir-compliant json and a frontend using d3.js to visualize and interact on the data.
 
+### DO... (Principles to excel in the class)
+
+- ...focus on very specific user group and their core job to get done. Understand or imagine every little detail.
+- ...think about the ways your user needs to receive, transform and send data. Try to automate or simplify their lives.
+- ...optimize on all little details and behaviour in your frontend. Make it a joy to use the app.
+- ...use an iterative and cloud-enabled development process. Make it easy to build everywhere, again and again.
+
+### DON'T... (Recipe to fail the class)
+- ...try to make the app targeted at too many users and too many of their tasks. One user with one task is enough.
+- ...use a visualization framework other than D3.js. High-level frameworks (Plotly, Charts,js, etc.) do not allow for enough customization. You can use frameworks like React, Vue or Svelte for state management though.
+- ...submit a jupyter notebook. Build a Backend and have it produce a good selection of data for you to use in the frontend
+- ...use an exotic or complicated build processes. I will try to automatically get data from Github Codespaces. If your app does not automatically build there, I cannot look at it.
+
 ## Sessions
 
 - Lecture: 30min
